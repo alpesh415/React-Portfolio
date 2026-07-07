@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Navbar */
+.custom-navbar{
+    background:#ffffff;
+    padding:16px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+/* Logo */
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#1e293b !important;
+    text-decoration:none;
+}
+
+.logo span{
+    color:#2563eb;
+}
+
+/* Navigation */
+
+.navbar-nav{
+    gap:15px;
+}
+
+.nav-link{
+    color:#475569 !important;
+    font-size:16px;
+    font-weight:600;
+    padding:8px 18px !important;
+    border-radius:30px;
+    transition:.3s ease;
+}
+
+/* Hover */
+
+.nav-link:hover{
+    background:#2563eb;
+    color:#ffffff !important;
+}
+
+/* Active Link */
+
+.nav-link.active{
+    background:#2563eb;
+    color:#fff !important;
+}
+
+/* Resume Button */
+
+.resume-btn{
+    padding:10px 24px;
+    border-radius:30px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.resume-btn:hover{
+    background:#1d4ed8;
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+/* Toggler */
+
+.navbar-toggler{
+    border:none;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+.navbar-collapse{
+    background:#ffffff;
+    margin-top:15px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.navbar-nav{
+    gap:10px;
+}
+
+.nav-link{
+    text-align:center;
+}
+
+.resume-btn{
+    display:block;
+    margin:15px auto 0;
+    width:180px;
+    text-align:center;
+}
+}

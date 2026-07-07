@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.footer{
+    background:#ffffff;
+    padding:70px 0 25px;
+    border-top:1px solid #e5e7eb;
+}
+
+.footer-logo{
+    font-size:34px;
+    font-weight:700;
+    color:#1e293b;
+    margin-bottom:18px;
+}
+
+.footer-logo span{
+    color:#2563eb;
+}
+
+.footer p{
+    color:#64748b;
+    line-height:1.8;
+    font-size:15px;
+}
+
+.footer h4{
+    color:#1e293b;
+    font-size:22px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+/* Links */
+
+.footer-links{
+    list-style:none;
+    padding:0;
+}
+
+.footer-links li{
+    margin-bottom:12px;
+}
+
+.footer-links a{
+    color:#64748b;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+.footer-links a:hover{
+    color:#2563eb;
+    padding-left:8px;
+}
+
+/* Social Icons */
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    background:#f1f5f9;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#2563eb;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+    border:1px solid #dbeafe;
+}
+
+.social-icons a:hover{
+    background:#2563eb;
+    color:#fff;
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+}
+
+/* Divider */
+
+.footer hr{
+    margin:40px 0 20px;
+    border:0;
+    border-top:1px solid #e2e8f0;
+}
+
+/* Copyright */
+
+.copyright{
+    text-align:center;
+    color:#64748b;
+    font-size:15px;
+    font-weight:500;
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.footer{
+    text-align:center;
+}
+
+.social-icons{
+    justify-content:center;
+}
+
+.footer-links{
+    margin-bottom:25px;
+}
+}

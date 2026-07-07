@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Home Section */
+
+.home{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#ffffff,#f5f9ff,#eef5ff);
+    overflow:hidden;
+    padding:90px 0;
+}
+
+/* Small Heading */
+
+.home h5{
+    color:#2563eb;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:15px;
+}
+
+/* Main Heading */
+
+.home h1{
+    font-size:65px;
+    font-weight:800;
+    color:#1e293b;
+    margin-bottom:15px;
+    line-height:1.2;
+}
+
+.home h1 span{
+    background:linear-gradient(90deg,#2563eb,#06b6d4);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Profession */
+
+.home h3{
+    font-size:30px;
+    color:#475569;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+/* Description */
+
+.home p{
+    font-size:17px;
+    color:#64748b;
+    line-height:1.9;
+    max-width:550px;
+    margin-bottom:35px;
+}
+
+/* Buttons */
+
+.home-btns{
+    display:flex;
+    gap:20px;
+}
+
+.btn1,
+.btn2{
+    padding:14px 34px;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+    transition:.35s ease;
+}
+
+.btn1{
+    background:#2563eb;
+    color:#fff;
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+}
+
+.btn1:hover{
+    background:#1d4ed8;
+    color:#fff;
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(37,99,235,.35);
+}
+
+.btn2{
+    border:2px solid #2563eb;
+    color:#2563eb;
+    background:#fff;
+}
+
+.btn2:hover{
+    background:#2563eb;
+    color:#fff;
+    transform:translateY(-5px);
+}
+
+/* Profile Image */
+
+.profile-img{
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid white;
+
+    transition:.4s ease;
+}
+
+.profile-img:hover{
+    transform:scale(1.05) rotate(2deg);
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.home{
+    text-align:center;
+    padding:120px 0 70px;
+}
+
+.home .row{
+    flex-direction:column-reverse;
+}
+
+.profile-img{
+    width:300px;
+    height:300px;
+    margin-bottom:50px;
+}
+
+.home h1{
+    font-size:45px;
+}
+
+.home h3{
+    font-size:24px;
+}
+
+.home p{
+    margin:0 auto 35px;
+}
+
+.home-btns{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+}

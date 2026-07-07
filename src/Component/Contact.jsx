@@ -1,65 +1,95 @@
-import React from 'react'
+import React from "react";
+import "../Assets/Style/Contact.css";
 
 export default function Contact() {
   return (
-    <div class=" text-primary-emphasis bg-white border-bottom border-dark " id="Contect">
-       <h1 class="pt-5 text-center" ><em>Contact</em></h1>
-      <h5 class="mt-3 text-center"><em>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis</em></h5>
-      <h5 class="mt-1 text-center"><em>unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</em></h5>
+    <section className="contact">
+      <div className="container">
 
-    <div class="p-5" style={{marginLeft:"500px"}}>
-      <div class="card w-50 bg-white p-5">
-  <div class="card-body">
-    <h3 class="card-title"><em>Contact Info</em></h3>
-    <p class="card-text"><em>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</em></p>
+        <div className="contact-title text-center">
+          <h5>Get In Touch</h5>
+          <h2>Contact Me</h2>
+          <p>
+            Have a project in mind or want to work together? Feel free to
+            contact me. I'll get back to you as soon as possible.
+          </p>
+        </div>
 
-      <div class="card mb-0  ms-2 bg-white w-75 border-0 ">
-  <div class="row g-0">
-    <div class="col-md-1">
-      <p class="mt-3 ms-4"><i class="bi bi-geo-alt fs-1 "></i></p>
-    </div>
-    <div class="col-md-11">
-      <div class="card-body ms-5">
-        <h5 class="card-title"><em>Our Location</em></h5>
-        <p class="card-text "><em>A108 Adam Street <br />New York, NY 535022.</em></p>
-        
+        <div className="row mt-5">
+
+          {/* Left Side */}
+          <div className="col-lg-5 mb-4">
+
+            <div className="contact-info">
+
+              <div className="info-box">
+                <h4>📍 Address</h4>
+                <p>Ahmedabad, Gujarat, India</p>
+              </div>
+
+              <div className="info-box">
+                <h4>📧 Email</h4>
+                <p>harshitrathod09r@gmail.com</p>
+              </div>
+
+              <div className="info-box">
+                <h4>📱 Phone</h4>
+                <p>+91 9023381530</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* Right Side */}
+
+          <div className="col-lg-7">
+
+            <form className="contact-form">
+
+              <div className="row">
+
+                <div className="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    className="form-control"
+                  />
+                </div>
+
+                <div className="col-md-6 mb-3">
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    className="form-control"
+                  />
+                </div>
+
+              </div>
+
+              <input
+                type="text"
+                placeholder="Subject"
+                className="form-control mb-3"
+              />
+
+              <textarea
+                rows="6"
+                placeholder="Your Message"
+                className="form-control mb-3"
+              ></textarea>
+
+              <button className="send-btn">
+                Send Message
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="card mb-0 ms-2 bg-white w-75 border-0 ">
-  <div class="row g-0">
-    <div class="col-md-1">
-      <p class="mt-3 ms-4"><i class="bi bi-telephone fs-1"></i></p>
-    </div>
-    <div class="col-md-11">
-      <div class="card-body ms-5">
-        <h5 class="card-title"><em>Phone Number</em></h5>
-        <p class="card-text "><em>+1 5589 55488 55<br />+1 6678 254445 41.</em></p>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="card mb-0  ms-2 bg-white w-75 border-0 ">
-  <div class="row g-0">
-    <div class="col-md-1">
-      <p class="mt-3 ms-4"><i class="bi bi-envelope fs-1"></i></p>
-    </div>
-    <div class="col-md-11">
-      <div class="card-body ms-5">
-    <h5 class="card-title"><em>Email Address</em></h5>
-        <p class="card-text "><em>info@example.com<br />contact@example.com.</em></p>
-        
-      </div>
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-    </div>
-    </div>
-  )
+    </section>
+  );
 }
