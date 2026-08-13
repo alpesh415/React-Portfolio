@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Logo & About */}
           <div className="col-lg-4 col-md-6 mb-4">
             <h2 className="footer-logo">
-              Harshit
+              ALPESH
             </h2>
 
             <p>
@@ -40,10 +40,10 @@ export default function Footer() {
             <h4>Contact</h4>
 
             <p>📍 Ahmedabad, Gujarat</p>
-            <p>📧 harsh@gmail.com</p>
-            <p>📱 +91 9876543210</p>
+            <p>📧 khantalpesh756@gmail.com</p>
+            <p>📱 +91 6354178271</p>
 <div className="social-icons">
-  <a href="https://github.com/harshitrathod0910r-cmd" target="_blank" rel="noreferrer">
+  <a href="https://github.com/alpesh415" target="_blank" rel="noreferrer">
     <FaGithub />
   </a>
 
@@ -51,11 +51,9 @@ export default function Footer() {
     <FaLinkedin />
   </a>
 
-  <a href="https://www.instagram.com/harshit_rathod_9324?igsh=OXNmdzhwODk2NGxn" target="_blank" rel="noreferrer">
-    <FaInstagram />
-  </a>
+ 
 
-  <a href="mailto:harsh@gmail.com">
+  <a href="mailto:Khantalpesh756@gmail.com">
     <FaEnvelope />
   </a>
 </div>
@@ -66,7 +64,7 @@ export default function Footer() {
         <hr />
 
         <div className="copyright">
-          © 2026 Harshit Rathod | All Rights Reserved.
+          © 2026 Alpesh khant | All Rights Reserved.
         </div>
 
       </div>

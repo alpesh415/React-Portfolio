@@ -29,12 +29,12 @@ export default function Contact() {
 
               <div className="info-box">
                 <h4>📧 Email</h4>
-                <p>harshitrathod09r@gmail.com</p>
+                <p>khantalpesh756@gmail.com</p>
               </div>
 
               <div className="info-box">
                 <h4>📱 Phone</h4>
-                <p>+91 9023381530</p>
+                <p>+91 63541782171</p>
               </div>
 
             </div>

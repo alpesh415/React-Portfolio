@@ -1,82 +1,210 @@
-.about{
-    padding:100px 0;
-    background:#ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
+/*==============================
+            ABOUT
+==============================*/
+
+.about{
+    position:relative;
+    overflow:hidden;
+    padding:100px 0;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81,#4c1d95);
+    color:#fff;
+}
+
+/* Animated Background */
+.about::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#3b82f6;
+    border-radius:50%;
+    filter:blur(150px);
+    opacity:.25;
+    top:-180px;
+    left:-180px;
+    animation:glow1 8s linear infinite alternate;
+}
+
+.about::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#ec4899;
+    border-radius:50%;
+    filter:blur(150px);
+    opacity:.25;
+    bottom:-180px;
+    right:-180px;
+    animation:glow2 8s linear infinite alternate;
+}
+
+@keyframes glow1{
+    from{
+        transform:translate(0,0);
+    }
+    to{
+        transform:translate(70px,50px);
+    }
+}
+
+@keyframes glow2{
+    from{
+        transform:translate(0,0);
+    }
+    to{
+        transform:translate(-70px,-50px);
+    }
+}
+
+/*==============================
+            HEADING
+==============================*/
+
 .about h5{
-    color:#2563eb;
+    color:#38bdf8;
     font-size:18px;
-    font-weight:600;
-    margin-bottom:10px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:15px;
 }
 
 .about h2{
-    font-size:42px;
-    font-weight:700;
-    color:#1e293b;
-    margin-bottom:20px;
+    font-size:48px;
+    font-weight:800;
+    color:#fff;
+    margin-bottom:25px;
 }
 
 .about h2 span{
-    color:#2563eb;
+    background:linear-gradient(135deg,#38bdf8,#8b5cf6,#ec4899);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
+/*==============================
+            TEXT
+==============================*/
+
 .about p{
-    color:#64748b;
+    color:#d1d5db;
     font-size:17px;
-    line-height:1.8;
+    line-height:1.9;
     margin-bottom:20px;
 }
 
+/*==============================
+            IMAGE
+==============================*/
+
 .about-img{
-    width:360px;
-    height:360px;
+    width:380px;
+    height:380px;
     object-fit:cover;
-    border-radius:20px;
-   
-    box-shadow:0 15px 35px rgba(37,99,235,.2);
+    border-radius:35px;
+    border:8px solid rgba(255,255,255,.15);
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.4),
+        0 0 40px rgba(59,130,246,.35);
+    transition:.5s;
+    animation:floatImage 5s ease-in-out infinite;
 }
+
+.about-img:hover{
+    transform:
+        perspective(900px)
+        rotateY(12deg)
+        rotateX(8deg)
+        scale(1.05);
+
+    box-shadow:
+        0 35px 80px rgba(236,72,153,.35),
+        0 0 60px rgba(59,130,246,.4);
+}
+
+@keyframes floatImage{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-18px);
+    }
+}
+
+/*==============================
+          INFO CARDS
+==============================*/
 
 .about-info{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:20px;
-    margin:35px 0;
+    margin:40px 0;
 }
 
 .about-info div{
-    background:#f8fafc;
-    padding:18px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.05);
+    padding:22px;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.15);
+    transition:.4s;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.about-info div:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,.12);
+    box-shadow:0 25px 50px rgba(59,130,246,.3);
 }
 
 .about-info h6{
-    color:#2563eb;
-    margin-bottom:6px;
-    font-weight:600;
+    color:#38bdf8;
+    font-size:17px;
+    margin-bottom:8px;
+    font-weight:700;
 }
 
 .about-info span{
-    color:#475569;
+    color:#f8fafc;
+    font-size:15px;
 }
+
+/*==============================
+            BUTTON
+==============================*/
 
 .about-btn{
     display:inline-block;
-    padding:12px 30px;
-    background:#2563eb;
-    color:#fff;
+    padding:15px 38px;
     text-decoration:none;
-    border-radius:30px;
+    color:#fff;
     font-weight:600;
-    transition:.3s;
+    border-radius:50px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed,#ec4899);
+    box-shadow:0 15px 35px rgba(37,99,235,.4);
+    transition:.4s;
 }
 
 .about-btn:hover{
-    background:#1d4ed8;
     color:#fff;
-    transform:translateY(-3px);
+    transform:translateY(-6px) scale(1.05);
+    box-shadow:0 25px 60px rgba(236,72,153,.45);
 }
+
+/*==============================
+        RESPONSIVE
+==============================*/
 
 @media(max-width:991px){
 
@@ -85,12 +213,45 @@
 }
 
 .about-img{
-    width:280px;
-    height:280px;
+    width:300px;
+    height:300px;
     margin-bottom:40px;
 }
 
 .about-info{
     grid-template-columns:1fr;
+}
+
+.about h2{
+    font-size:38px;
+}
+
+}
+
+@media(max-width:576px){
+
+.about{
+    padding:70px 0;
+}
+
+.about h2{
+    font-size:30px;
+}
+
+.about h5{
+    font-size:16px;
+}
+
+.about p{
+    font-size:15px;
+}
+
+.about-img{
+    width:240px;
+    height:240px;
+}
+
+.about-btn{
+    padding:13px 30px;
 }
 }

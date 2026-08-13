@@ -1,7 +1,8 @@
 import React from "react";
 import "../Assets/Style/Home.css";
-import profile from "../Assets/image1.jpeg";
+import profile from "../Assets/ALPESH.jpeg";
 import { Link } from "react-router-dom";
+// import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
             <h5>Hello, I'm</h5>
 
             <h1>
-              Harshit <span>Rathod</span>
+              ALPESH <span>KHANT</span>
             </h1>
 
             <h3>Frontend React Developer</h3>
@@ -25,8 +26,14 @@ export default function Home() {
             </p>
 
             <div className="home-btns">
-              <button className="btn1">Download CV</button>
-              <button className="btn2" ><Link to="/contact" style={{textDecoration:"none"}}>Contact Me</Link></button>
+              <button className="btn1">  <a
+  href="/ALPESH-RESUME.pdf"
+  download
+  className="btn resume-btn"
+>
+  Download CV
+</a></button>
+              {/* <button className="btn2" ><Link to="/contact" style={{textDecoration:"none"}}>Contact Me</Link></button> */}
             </div>
           </div>
 
@@ -40,3 +47,17 @@ export default function Home() {
     </section>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

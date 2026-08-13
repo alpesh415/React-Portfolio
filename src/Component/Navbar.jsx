@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="container">
 
         <Link className="navbar-brand logo" to="/">
-          Harshit
+          A L P E S H
         </Link>
 
         <button
@@ -54,9 +54,9 @@ export default function Navbar() {
             </li>
 
             <li className="nav-item ms-lg-3">
-             <a
-  href="/resume.pdf"
-  download="Harshit_Resume.pdf"
+    <a
+  href="/ALPESH-RESUME.pdf"
+  download
   className="btn resume-btn"
 >
   Resume
